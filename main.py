@@ -10,9 +10,9 @@ from loss import spread_loss, cross_entropy, margin_loss
 from network import baseline_model_kimcnn, baseline_model_cnn, capsule_model_A, capsule_model_B
 from sklearn.utils import shuffle
 
-tf.reset_default_graph()
+tf.compat.v1.reset_default_graph()
 np.random.seed(0)
-tf.set_random_seed(0)
+tf.compat.v1.set_random_seed(0)
 
 parser = argparse.ArgumentParser()
 
